@@ -1,0 +1,59 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+html {
+  background: #faf4ec;
+}
+
+.sideBtn {
+  padding: 10px 9px;
+  transition: ease-in-out 0.3s;
+  background-color: #fcb8fa;
+  color: black;
+  font-weight: bolder;
+  font-size: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.sideBtn:hover {
+  transform: scale(1.2) rotate(-10deg);
+}
+
+.sideBtn2 {
+  padding: 10px 9px;
+  transition: 0.4s;
+  border: 2px solid black;
+  color: black;
+  font-weight: bolder;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.sideBtn2:hover {
+  transform: rotate(-6deg);
+
+}
+
+.sideBtn3 {
+  padding: 10px 9px;
+  transition: ease-in-out 0.3s;
+  background-color: #FA5424;
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.sideBtn3:hover {
+  transform:  rotate(-10deg);
+}
+
+.clipArt{
+  clip-path: polygon(0 73%, 100% 52%, 100% 100%, 0% 100%);
+}
