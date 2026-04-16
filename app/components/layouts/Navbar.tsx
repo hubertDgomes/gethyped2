@@ -19,10 +19,10 @@ const Navbar = () => {
           </div>
           <div className="">
             <ul className="flex justify-between bg-white py-3 px-5 gap-x-10 font-bold rounded-2xl text-[18px]">
-              <MovingBtn text="Expertises"/>
-              <MovingBtn text="Work"/>
-              <MovingBtn text="About"/>
-              <MovingBtn text="Contact"/>
+              <MovingBtn className="bg-white" text="Expertises"/>
+              <MovingBtn className="bg-white" text="Work"/>
+              <MovingBtn className="bg-white" text="About"/>
+              <MovingBtn className="bg-white" text="Contact"/>
             </ul>
           </div>
           <div className="">
