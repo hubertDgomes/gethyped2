@@ -8,13 +8,13 @@ const inter = Inter();
 const Home = () => {
   return (
     <>
-      <Container className={`mt-50 ${inter.className}`}>
+      <Container className={`lg:mt-50 mt-[100px] ${inter.className}`}>
         <h1
-          className={`font-bold text-[128px] w-[1400px] leading-[120px]`}
+          className={`lg:font-bold font-semibold lg:text-[128px] text-[60px] lg:w-[1400px] leading-[60px] lg:leading-[120px] mx-[20px]`}
         >
-          Get Hyped. Get Noticed. Get Results.
+          Get Hyped, <br /> Get Noticed. <br /> Get Results.
         </h1>
-        <p className="font-bold text-[32px] mt-[30px]">Klaar met gokken op content <br /> die niets oplevert?</p>
+        <p className="lg:font-bold font-semibold lg:text-[32px] text-[25px] mt-[30px] lg:mx-0 mx-[20px]">Klaar met gokken op content <br /> die niets oplevert?</p>
       </Container>
     </>
   );

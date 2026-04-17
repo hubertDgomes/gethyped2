@@ -25,13 +25,13 @@ const MicroCard = ({
   return (
     <>
       <div
-        className={`h-[585px] w-[450px] mx-[20px] transition-all ease-in-out duration-200 ${bgcol} ${inter.className} ${rotate} ${className} rounded-4xl flex flex-col justify-between p-9 cursor-pointer`}
+        className={`lg:h-[585px] lg:w-[450px] h-[400px] w-[700px] mx-[20px] transition-all ease-in-out duration-200 ${bgcol} ${inter.className} ${rotate} ${className} rounded-4xl flex flex-col justify-between p-9 cursor-pointer`}
       >
-        <p className="text-[88px] font-bold">{counter}</p>
+        <p className="lg:text-[88px] text-[50px] font-bold">{counter}</p>
         <div className="">
-          <p className="font-bold text-[22px]">{part1}</p>
+          <p className="font-bold lg:text-[22px] text-[20px]">{part1}</p>
           <hr />
-          <p className="font-bold text-[22px]">{part2}</p>
+          <p className="font-bold lg:text-[22px] text-[20px]">{part2}</p>
         </div>
       </div>
     </>
@@ -42,7 +42,7 @@ const VideoCard = ({ rotate = "", className = "", src = "" }: Add) => {
   return (
     <>
       <div
-        className={`w-[450px] mx-[20px] transition-all ease-in-out duration-200 ${inter.className} ${rotate} ${className} flex flex-col justify-between cursor-pointer`}
+        className={`lg:w-[450px] w-[300px] mx-[20px] transition-all ease-in-out duration-200 ${inter.className} ${rotate} ${className} flex flex-col justify-between cursor-pointer`}
       >
         <video
           src={src}
@@ -64,7 +64,7 @@ const Cards = () => {
         <div className="relative flex items-center group transition-all ease-in-out duration-200">
           <MicroCard
             bgcol="bg-[#0D8DFF]"
-            rotate="rotate-[-7deg] hover:rotate-0 hover:mx-[80px]"
+            rotate="lg:rotate-[-7deg] lg:hover:rotate-0 hover:mx-[80px]"
             counter="10M+"
             part1="Organische views"
             part2="Groei door slimme content"
@@ -82,13 +82,13 @@ const Cards = () => {
             counter="30+"
             part1="Merken geholpen"
             part2="Van start-up tot multinational"
-            className=""
+            className="lg:block hidden"
           />
           <VideoCard
             src="https://gethyped.b-cdn.net/Petrol%20Head/petrolhead-loop.mp4"
             bgcol="bg-[#0D8DFF]"
             rotate="rotate-[-7deg] hover:rotate-0 hover:mx-[80px]"
-            className=""
+            className="lg:block hidden"
           />
         </div>
       </Container>

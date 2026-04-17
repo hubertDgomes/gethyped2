@@ -13,8 +13,8 @@ type items = {
   borderCol: string;
   videoLink: string;
   bgCol: string;
-  text1 : string;
-  text2 : string
+  text1: string;
+  text2: string
 };
 
 const ShowCase = ({
@@ -29,7 +29,7 @@ const ShowCase = ({
   return (
     <>
       <div
-        className={`h-[525px] w-[375px] border-8  ${borderCol} rounded-[48px] ${className} group cursor-pointer hover:rotate-[-3deg] transition-all ease-in-out duration-300 ${inter.className}`}
+        className={`relative h-[525px] w-full max-w-[375px] mx-auto border-8 ${borderCol} rounded-[48px] ${className} group cursor-pointer hover:rotate-[-3deg] transition-all ease-in-out duration-300 ${inter.className}`}
       >
         <Image
           src={src}
@@ -43,7 +43,7 @@ const ShowCase = ({
           loop
           muted
           playsInline
-          className="absolute w-full h-full rounded-[40px] opacity-0 group-hover:opacity-100 object-cover transition-all ease-in-out duration-300"
+          className="absolute w-full h-full rounded-[40px] opacity-100 lg:opacity-0 lg:group-hover:opacity-100 object-cover transition-all ease-in-out duration-300"
         ></video>
         <div
           className={`absolute bottom-7 left-1/2 -translate-x-1/2 w-[320px] p-4 h-[580px] flex flex-col justify-end rounded-2xl  ${bgCol} text-white clipArt`}
@@ -68,11 +68,11 @@ const Content = () => {
   return (
     <>
       <Container className={`${inter.className} pb-[100px]`}>
-        <div className="ml-20">
-          <h1 className="text-[120px] font-bold w-[681px] leading-30">
+        <div className="lg:ml-20 m-3">
+          <h1 className="text-[60px] md:text-[120px] font-bold lg:w-[681px] lg:leading-30 leading-14">
             Content dat scoort.
           </h1>
-          <p className="text-[32px] font-semibold w-[681px] my-[40px]">
+          <p className="text-[25px] font-semibold lg:w-[681px] my-[20px] lg:my-[40px]">
             Wij vertellen jouw verhaal. Op een manier die écht past bij jouw
             doelgroep. Met creatieve content die werkt en het verschil maakt.
           </p>
@@ -83,30 +83,30 @@ const Content = () => {
             </span>
           </button>
         </div>
-        <div className="relative mt-[30px] py-[30px]">
+        <div className="lg:relative mt-[30px] py-[30px] flex flex-col gap-10 lg:flex-row lg:items-center lg:min-h-[700px]">
           <ShowCase
             borderCol="border-[#FA5424]"
             bgCol="bg-[#FA5424]"
             src="/images/bg1.jpeg"
-            className="absolute left-30"
+            className="lg:absolute lg:left-[10%] xl:left-30"
             text1="Van nul naar vol, binnen 3 weken"
             text2="Billit"
             videoLink="https://gethyped.b-cdn.net/Bullit/Bullit%20%7C%20Loop.mp4"
-            />
+          />
           <ShowCase
             borderCol="border-[#0D8DFF]"
             bgCol="bg-[#0D8DFF]"
             src="/images/bg2.jpeg"
-            className="absolute left-1/2 -translate-x-1/2 top-[-40px]"
+            className="lg:absolute lg:left-1/2 lg:-translate-x-1/2 lg:top-[-40px]"
             text1="Zacht in smaak, sterk in beeld"
             text2="Roasta"
             videoLink="https://gethyped.b-cdn.net/Roasta/roasta-loop.mp4"
-            />
+          />
           <ShowCase
             borderCol="border-[#33C791]"
             bgCol="bg-[#33C791]"
             src="/images/bg3.jpeg"
-            className="absolute right-30 top-[-80px]"
+            className="lg:absolute lg:right-[10%] xl:right-30 lg:top-[-80px]"
             text1="Content die écht smaakt (en raakt)"
             text2="Loco"
             videoLink="https://gethyped.b-cdn.net/Loco/loco-bites-loop.mp4"

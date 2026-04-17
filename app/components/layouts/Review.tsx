@@ -6,26 +6,28 @@ import { HiArrowSmRight } from "react-icons/hi";
 import { HiArrowSmDown } from "react-icons/hi";
 
 const inter = Inter();
+
+
 const Review = () => {
   return (
     <>
       <Container className={`py-[100px] ${inter.className}`}>
-        <p className="text-[80px] font-semibold  leading-20 ml-[100px]">
-          Wij maken content die opvalt. Die <br /> blijft hangen. Die jouw
-          doelgroep <br />
-          raakt en jouw merk in beweging <br /> brengt. Snel, krachtig en
+        <p className="lg:text-[80px] text-[30px] leading-10 lg:font-semibold font-bold lg:leading-20 lg:ml-[100px] ml-[20px]">
+          Wij maken content die opvalt. Die <br className="hidden lg:block" /> blijft hangen. Die jouw
+          doelgroep <br className="hidden lg:block" />
+          raakt en jouw merk in beweging <br className="hidden lg:block" /> brengt. Snel, krachtig en
           energiek.
         </p>
-        <div className="flex justify-between items-end mt-[100px]">
+        <div className="flex justify-between lg:flex-row flex-col items-end mt-[100px]">
           <Image
             src={"/images/girl.jpeg"}
             alt="logo"
             width={300}
             height={200}
-            className="rounded-3xl"
+            className="rounded-3xl hidden lg:block"
           />
-          <div className="">
-            <p className="w-[580px] text-[32px] font-semibold leading-10">
+          <div className="mx-[20px]">
+            <p className="lg:w-[580px] lg:text-[32px] text-[24px] font-semibold lg:leading-10 ">
               We stoppen niet bij mooie plaatjes en vette beelden. We maken het
               meetbaar. Zo weet je precies wat werkt en wat niet. Nooit meer
               content zonder strategie. Nooit meer content zonder resultaat.
@@ -37,7 +39,7 @@ const Review = () => {
               </span>
             </button>
           </div>
-          <div className="">
+          <div className="hidden lg:block">
             <button className="sideBtn2 cursor-pointer group relative overflow-hidden  w-[100px] h-[100px] text-center">
               <HiArrowSmDown className="absolute top-[-33px] text-[40px] left-7 group-hover:top-[30px] transition-all ease-in-out duration-200 text-amber-500" />
               <HiArrowSmDown className="text-[40px] top-[30px] left-7 absolute group-hover:top-[100px] transition-all ease-in-out duration-200  text-amber-500" />
