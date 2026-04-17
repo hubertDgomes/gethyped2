@@ -17,7 +17,7 @@ const Footer = () => {
   return (
     <>
       <div
-        className={`${inter.className}`}
+        className={`${inter.className} hidden md:block`}
         style={{ height: "800px", position: "relative", overflow: "hidden" }}
       >
         <ImageTrail
@@ -48,9 +48,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <Container>
+      <Container className="mb-10">
+        {/* Desktop Footer */}
         <div
-          className={`w-full p-15 relative flex h-[400px] flex-col justify-end rounded-2xl bg-[#EAE4D8] text-white clipArt2 ${inter.className}`}
+          className={`w-full p-15 relative h-[400px] flex-col justify-end rounded-2xl bg-[#EAE4D8] text-white clipArt2 hidden md:flex ${inter.className}`}
         >
           <Image
             src={"/images/logo.svg"}
@@ -93,7 +94,7 @@ const Footer = () => {
             </div>
 
             <div className="">
-              {/* This is the right items */}
+
               <h3 className="font-bold text-2xl">Contact</h3>
               <p className=" text-[15px]">info@gethyped.nl</p>
               <p className=" text-[15px]">tel:+31615337496</p>
@@ -102,6 +103,64 @@ const Footer = () => {
               <p className=" text-[15px]"> 7141 AL Groenlo</p>
               <p className="text-[13px] font-light">Privacyvoorwaarden</p>
             </div>
+          </div>
+        </div>
+
+
+        <div className={`w-full py-12 px-6 flex flex-col items-center bg-[#EAE4D8] text-black rounded-[30px] md:hidden ${inter.className}`}>
+
+          <div className="w-full max-w-[320px] mb-8">
+            <Image
+              src={"/images/logo.svg"}
+              width={400}
+              height={150}
+              alt="logo"
+              className="w-full h-auto"
+            />
+          </div>
+          <button className="bg-[#FA5424] text-white w-full max-w-[320px] rounded-[15px] py-4 px-6 flex justify-between items-center font-bold text-[17px] mb-8 shadow-sm">
+            Get Hyped! Neem contact op
+            <span className="bg-white text-[#FA5424] p-1.5 rounded-full flex items-center justify-center">
+              <FaFire className="text-lg" />
+            </span>
+          </button>
+
+          <div className="flex flex-wrap justify-center gap-3 mb-8 w-full max-w-[320px]">
+            <span className="bg-white rounded-[12px] font-bold text-sm px-4 py-2 cursor-pointer shadow-sm">Expertises</span>
+            <span className="bg-white rounded-[12px] font-bold text-sm px-4 py-2 cursor-pointer shadow-sm">Work</span>
+            <span className="bg-white rounded-[12px] font-bold text-sm px-4 py-2 cursor-pointer shadow-sm">About</span>
+            <span className="bg-white rounded-[12px] font-bold text-sm px-4 py-2 cursor-pointer shadow-sm">Contact</span>
+          </div>
+
+
+          <div className="flex justify-center gap-4 mb-8">
+            <div className="w-10 h-10 flex items-center justify-center bg-white rounded-full cursor-pointer shadow-sm">
+              <FaLinkedinIn className="text-black text-lg" />
+            </div>
+            <div className="w-10 h-10 flex items-center justify-center bg-white rounded-full cursor-pointer shadow-sm">
+              <FaTiktok className="text-black text-lg" />
+            </div>
+            <div className="w-10 h-10 flex items-center justify-center bg-white rounded-full cursor-pointer shadow-sm">
+              <IoLogoInstagram className="text-black text-lg" />
+            </div>
+            <div className="w-10 h-10 flex items-center justify-center bg-white rounded-full cursor-pointer shadow-sm">
+              <FaYoutube className="text-black text-lg" />
+            </div>
+          </div>
+
+
+          <div className="text-center font-medium text-[15px] leading-relaxed mb-10 text-black/80">
+            <p>info@gethyped.nl</p>
+            <p>+31 6 1533 7496</p>
+            <div className="h-4"></div>
+            <p>Beltrumsestraat 6,</p>
+            <p>7141 AL Groenlo</p>
+          </div>
+
+          <div className="text-center text-[13px] font-medium text-black/50 space-y-3">
+            <p>Privacyvoorwaarden</p>
+            <p>© 2025 Get Hyped</p>
+            <p>© Design by Dylan</p>
           </div>
         </div>
       </Container>

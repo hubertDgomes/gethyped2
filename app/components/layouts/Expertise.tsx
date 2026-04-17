@@ -10,7 +10,7 @@ const Expertise = () => {
     <>
       <ScrollStack className={`${inter.className}`}>
 
-        {/* Card 1 — Social Strategy */}
+ 
         <ScrollStackItem itemClassName="bg-white">
           <div className="flex flex-col h-full justify-between gap-6 md:gap-0">
             <div>
@@ -51,7 +51,7 @@ const Expertise = () => {
           </div>
         </ScrollStackItem>
 
-        {/* Card 2 — Content Creation */}
+
         <ScrollStackItem itemClassName="bg-[#FCB8FA] min-h-[600px] md:h-[800px]">
           <div className="flex flex-col h-full justify-between gap-6 md:gap-0">
             <div>
@@ -90,7 +90,7 @@ const Expertise = () => {
           </div>
         </ScrollStackItem>
 
-        {/* Card 3 — Activation */}
+
         <ScrollStackItem itemClassName="bg-[#33C791] min-h-[600px] md:h-[800px]">
           <div className="flex flex-col h-full justify-between gap-6 md:gap-0">
             <div>
@@ -129,7 +129,7 @@ const Expertise = () => {
           </div>
         </ScrollStackItem>
 
-        {/* Card 4 — Data */}
+
         <ScrollStackItem itemClassName="bg-[#0D8DFF] min-h-[600px] md:h-[800px]">
           <div className="flex flex-col h-full justify-between gap-6 md:gap-0">
             <div>

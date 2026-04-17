@@ -42,7 +42,7 @@ const VideoCard = ({ rotate = "", className = "", src = "" }: Add) => {
   return (
     <>
       <div
-        className={`lg:w-[450px] w-[300px] mx-[20px] transition-all ease-in-out duration-200 ${inter.className} ${rotate} ${className} flex flex-col justify-between cursor-pointer`}
+        className={`lg:w-[450px] w-[550px] mx-[20px] transition-all ease-in-out duration-200 overflow-hidden ${inter.className} ${rotate} ${className} flex flex-col justify-between cursor-pointer`}
       >
         <video
           src={src}

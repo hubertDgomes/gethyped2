@@ -12,7 +12,7 @@ const Review = () => {
   return (
     <>
       <Container className={`py-[100px] ${inter.className}`}>
-        <p className="lg:text-[80px] text-[30px] leading-10 lg:font-semibold font-bold lg:leading-20 lg:ml-[100px] ml-[20px]">
+        <p className="lg:text-[80px] text-[30px] leading-10 lg:font-semibold font-bold lg:leading-20 lg:ml-[100px] mx-[20px]">
           Wij maken content die opvalt. Die <br className="hidden lg:block" /> blijft hangen. Die jouw
           doelgroep <br className="hidden lg:block" />
           raakt en jouw merk in beweging <br className="hidden lg:block" /> brengt. Snel, krachtig en

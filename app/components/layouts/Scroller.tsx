@@ -30,8 +30,8 @@ type photo = {
 const Logos = ({ src = "" }: photo) => {
   return (
     <>
-      <div className="h-[300px] h-[300px] border rounded-[5px] border-black/50 p-4 mx-[20px] relative">
-        <Image src={src} fill alt="logo.ong" className="object-cover" />
+      <div className="h-[150px] sm:h-[200px] md:h-[300px] border rounded-[5px] border-black/50 p-2 md:p-4 mx-2 md:mx-[20px] relative">
+        <Image src={src} fill alt="logo" className="object-cover" />
       </div>
     </>
   );
@@ -77,13 +77,13 @@ const Scroller = () => {
   };
   return (
     <>
-      <Container className={`mt-[500px] pb-[80px] ${inter.className}`}>
-        <h3 className="font-semibold text-[80px] leading-20">
+      <Container className={`mt-[100px] md:mt-[300px] lg:mt-[500px] pb-10 md:pb-[80px] px-4 md:px-0 ${inter.className}`}>
+        <h3 className="font-semibold text-5xl md:text-[80px] leading-tight md:leading-20">
           These brands <br /> got hyped.
         </h3>
       </Container>
 
-      <div className="slider-container mt-[30px] py-[30px]">
+      <div className="slider-container mt-[30px]  py-[30px]">
         <Slider {...settings}>
           {allPhotos.map((items) => (
             <div>
