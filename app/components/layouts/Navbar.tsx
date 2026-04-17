@@ -43,7 +43,7 @@ const Navbar = () => {
               className="block lg:hidden mr-[50px] text-[40px] bg-pink-300 p-3 rounded-[10px] cursor-pointer z-40">{toggle ? <IoCloseOutline /> : <IoMdMenu />}</button>
           </div>
           {toggle &&
-            <div className="absolute inset-0 m-[10px]  h-[100vh] bg-pink-300 z-30 pt-28 px-6 rounded-2xl lg:hidden flex flex-col p-5">
+            <div className="absolute inset-0 m-[10px] mr-[30px] h-[100vh] bg-pink-300 z-30 pt-28 px-6 rounded-2xl lg:hidden flex flex-col p-5">
               <ul className="flex flex-col font-bold gap-x-[10px] rounded-2xl text-[18px] text-black justify-center items-center h-screen gap-4">
                 <MovingBtn className="bg-white rounded-[10px] w-fit text-[30px]" text="Expertises" />
                 <MovingBtn className="bg-white rounded-[10px] w-fit text-[30px]" text="Work" />
