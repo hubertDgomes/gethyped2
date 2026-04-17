@@ -40,7 +40,7 @@ const Navbar = () => {
             </div>
             <button
               onClick={() => setToggle(!toggle)}
-              className="block lg:hidden mr-[50px] text-[40px] bg-pink-300 p-3 rounded-[10px] cursor-pointer z-40">{toggle ? <IoCloseOutline /> : <IoMdMenu />}</button>
+              className="block lg:hidden mr-[50px] text-[40px] bg-pink-300 p-3 rounded-[10px] cursor-pointer z-40">{toggle ? <div className="bg-white p-2 rounded-[10px]"><IoCloseOutline /></div> : <IoMdMenu />}</button>
           </div>
           {toggle &&
             <motion.div
